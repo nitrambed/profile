@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.my-2 {
+  margin : 2rem 0;
+}
+
+.color-text {
+  color: #0B1B2B;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+  background-color: #0B1B2B;
+  color: #fff;
+  height: 95vh;
+  position: relative;
+}
+
+header .wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .wrapper h1 {
+  font-size: 12rem;
+  letter-spacing: 0.5rem;
+  line-height: 10rem;
+}
+
+header .wrapper h1 span {
+  display: block;
+}
+
+.lovecats {
+  color: #F66121;
+  font-weight: 700;
+}
+
+.anime-left {
+  animation: moveInLeft 2s ease-out;
+}
+
+.anime-right {
+  animation: moveInRight 2s ease-out;
+}
+
+.anime-bottom {
+  animation: moveInBottom 3s ease-out;
+}
+
+
+h2 {
+  font-size: 3rem;
+}
+
+.about-me {
+  background-color: #FFF;
+}
+
+.about-me .wrapper {
+  width: 1200px;
+  margin: 10rem auto;
+  display: flex;
+  gap: 60px;
+}
+.about-me img {
+  border-radius: 50%;
+  width: 250px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.text-effect {
+  background-image: linear-gradient(to right, #dda52c, #F66121);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.project {
+  background-color: #F5F5F5;
+}
+
+.project .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 6rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 4rem;
+  gap: 10px;
+}
+
+.card img {
+  width: 200px;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: #F66121;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: #d84607;
+}
+
+
+.keep-in-touch {
+  background-color: #0B1B2B;
+  color: #fff;
+  height: 40vh;
+  position: relative;
+}
+
+.keep-in-touch .wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style:  none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fab {
+  color: #FFF;
+  font-size: 2rem;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.fab:hover {
+  transform: translateY(-2px);
+  color: #d84607;
+}
+
+
+
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  80% {
+      transform: translateX(1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(10rem);
+  }
+
+  80% {
+      transform: translateX(-1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
